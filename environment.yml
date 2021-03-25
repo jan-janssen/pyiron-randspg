@@ -4,6 +4,6 @@ dependencies:
 - python
 - pyiron =0.4.3
 - pyiron_atomistics =0.2.9
-- pyiron_contrib =0.0.9
+- pyiron_contrib =0.0.10
 - pyiron-data =0.0.14
 - randspg
