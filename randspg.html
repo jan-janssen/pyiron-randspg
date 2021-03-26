@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; pyiron-randspg</title>
+    <title>pyiron randspg example &#8212; pyiron-randspg</title>
     
   <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -91,6 +91,14 @@
   </a>
  </li>
 </ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   pyiron randspg example
+  </a>
+ </li>
+</ul>
+
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -171,15 +179,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="simple nav section-nav flex-column">
-</ul>
-
-        </nav>
-        
         </div>
     </div>
 </div>
@@ -188,7 +187,9 @@
         
               <div>
                 
-  <div class="cell docutils container">
+  <div class="section" id="pyiron-randspg-example">
+<h1>pyiron randspg example<a class="headerlink" href="#pyiron-randspg-example" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyiron</span> <span class="kn">import</span> <span class="n">Project</span>
 </pre></div>
@@ -222,10 +223,121 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Comment</td>
+      <td>#Inputfil</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>composition</td>
+      <td>Mg4Al2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>spacegroups</td>
+      <td>1-8, 10, 25, 28, 30-32</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>latticeMins</td>
+      <td>3.0,  3.0,  3.0,  60.0,  60.0,  60.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>latticeMaxes</td>
+      <td>10.0, 10.0, 10.0, 120.0, 120.0, 120.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>minVolume</td>
+      <td>450</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>maxVolume</td>
+      <td>500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>numOfEachSpgToGenerate</td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>setMinRadii</td>
+      <td>0.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>scalingFactor</td>
+      <td>0.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>maxAttempts</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>outputDir</td>
+      <td>randSpgOut</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>verbosity</td>
+      <td>r</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">randspg</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The job test was saved and received the ID: 1
 </pre></div>
 </div>
 </div>
@@ -235,6 +347,65 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pr</span><span class="o">.</span><span class="n">job_table</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>status</th>
+      <th>chemicalformula</th>
+      <th>job</th>
+      <th>subjob</th>
+      <th>projectpath</th>
+      <th>project</th>
+      <th>timestart</th>
+      <th>timestop</th>
+      <th>totalcputime</th>
+      <th>computer</th>
+      <th>hamilton</th>
+      <th>hamversion</th>
+      <th>parentid</th>
+      <th>masterid</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>finished</td>
+      <td>None</td>
+      <td>test</td>
+      <td>/test</td>
+      <td>/home/jovyan/</td>
+      <td>demo/</td>
+      <td>2021-03-26 08:16:58.928251</td>
+      <td>2021-03-26 08:17:04.691899</td>
+      <td>5.0</td>
+      <td>pyiron@jupyter-jan-2djanssen-2dpyiron-2drandspg-2dn678m1vh#1</td>
+      <td>RandSpg</td>
+      <td>0.1</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 </div>
 
